@@ -157,5 +157,52 @@ namespace TestHelper.Helpers
                 new List<char>() {'d', 'd', 'd'}
             };
         }
+
+        public static IEnumerable<IEnumerable<int>> GetVariationsWithRepetitionForTwoNumbers()
+        {
+            return new List<List<int>>()
+            {
+                new List<int>() {1, 1},
+                new List<int>() {1, 2},
+                new List<int>() {2, 1},
+                new List<int>() {2, 2}
+            };
+        }
+
+        public static IEnumerable<IEnumerable<int>> GetVariationsWithRepetitionForThreeNumbers()
+        {
+            return new List<List<int>>()
+            {
+                new List<int>() {1, 1, 1},
+                new List<int>() {1, 1, 2},
+                new List<int>() {1, 1, 3},
+                new List<int>() {1, 2, 1},
+                new List<int>() {1, 2, 2},
+                new List<int>() {1, 2, 3},
+                new List<int>() {1, 3, 1},
+                new List<int>() {1, 3, 2},
+                new List<int>() {1, 3, 3},
+
+                new List<int>() {2, 1, 1},
+                new List<int>() {2, 1, 2},
+                new List<int>() {2, 1, 3},
+                new List<int>() {2, 2, 1},
+                new List<int>() {2, 2, 2},
+                new List<int>() {2, 2, 3},
+                new List<int>() {2, 3, 1},
+                new List<int>() {2, 3, 2},
+                new List<int>() {2, 3, 3},
+                         
+                new List<int>() {3, 1, 1},
+                new List<int>() {3, 1, 2},
+                new List<int>() {3, 1, 3},
+                new List<int>() {3, 2, 1},
+                new List<int>() {3, 2, 2},
+                new List<int>() {3, 2, 3},
+                new List<int>() {3, 3, 1},
+                new List<int>() {3, 3, 2},
+                new List<int>() {3, 3, 3}
+            };
+        }
     }
 }

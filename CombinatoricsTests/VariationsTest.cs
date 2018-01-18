@@ -50,5 +50,27 @@ namespace CombinatoricsTests
 
             Assert.That(expectedResult, Is.EqualTo(actualResult));
         }
+
+        [Test]
+        public void TestVariationsWithRepetitionForTwoNumbers()
+        {
+            var inputSet = new[] { 1, 2 };
+            var expectedResult = VariatorHelper.GetVariationsWithRepetitionForTwoNumbers();
+
+            var actualResult = new Variations<int>(inputSet, 2, GenerateOption.WithRepetition).AsEnumerable();
+
+            Assert.That(expectedResult, Is.EqualTo(actualResult));
+        }
+
+        [Test]
+        public void TestVariationsWithRepetitionForThreeNumbers()
+        {
+            var inputSet = new[] { 1, 2, 3};
+            var expectedResult = VariatorHelper.GetVariationsWithRepetitionForThreeNumbers();
+
+            var actualResult = new Variations<int>(inputSet, 3, GenerateOption.WithRepetition).AsEnumerable();
+
+            Assert.That(expectedResult, Is.EqualTo(actualResult));
+        }
     }
 }
